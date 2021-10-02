@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<!-- Web Tech Project By Raghavendra, Baivab, Aniketh-->
+<!-- ################################################################################################ -->
+
+<html>
+<head>
+<title>We Care</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="fl_left">
+      <ul class="nospace inline pushright">
+        <li><i class="fa fa-sign-in"></i> <a href="login.html">Login</a></li>
+        <li><i class="fa fa-user"></i> <a href="Register.html">Register</a></li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul class="nospace inline pushright">
+        <li><i class="fa fa-phone"></i> +91 9148045493</li>
+        <li><i class="fa fa-envelope-o"></i> wecare@gmail.com</li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+
+
+
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo">
+      <h1><a href="../index.html">We Care</a></h1>
+      <p>One Small Gesture Can Go A Long Way</p>
+    </div>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li class="active"><a href="../index.html">Home</a></li>
+      <li class="active"><a href="community.html">About Us</a></li>
+      <li class="active"><a href="KarnatakaFlood.html">What's Happening</a></li>
+      <li class="active"><a href="joinourcommunity.html">Join The Movement</a></li>
+      </ul>
+    </nav>
+</div>
+
+    <!-- ################################################################################################ -->
+    <div class="content">
+    <div class="form">
+        <main class="hoc container clear"> 
+        <tbody><tr><th align="center" colspan="2"><h1> Register</h1></th></tr></tbody>
+        <form method="POST" action="register.php">
+            <table id="login" align="center">
+                <tr>
+                    <td>
+                            Username:
+                    </td>
+                    <td>
+                            <input type="text" id="uname" name="uname"/>
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                                Password:
+                        </td>
+                        <td>
+                                <input type="password" id="pwd" name="pwd"/>
+                        </td>
+
+                </tr>
+                <tr>
+                        <td>
+                                Confirm New Password:
+                        </td>
+                        <td>
+                                <input type="password" id="pwd1" onblur="check()"/>
+                        </td>
+
+                </tr>
+                <tr>
+                        <td>
+                                E-mail address:
+
+                        </td>
+                        <td>
+                                <input type="email" id="email" name="email"/>
+                        </td>
+
+                </tr>
+                <tr>
+                        <td>
+                                Date of Birth:
+                        </td>
+                        <td>
+                                <input type="date" id="dob" name="dob"/>
+                        </td>
+
+                </tr>
+                <tr>
+                        <td>
+                                Gender:
+                        </td>
+                        <td>
+                                Male<input type="radio" name ="gender" value="m" id="gender"/>
+                                Female<input type="radio" name="gender" value="f" id="gender"/>
+                        </td>
+
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input type="reset" value="Clear" id="clear">
+                    </td>
+                    <td align="center">
+                        <input type="submit" value="Submit" id="submit"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+      </main>
+    </div>
+        
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+ 
+    <!-- JAVASCRIPTS -->
+    <script src="../layout/scripts/jquery.min.js"></script>
+    <script src="../layout/scripts/jquery.backtotop.js"></script>
+    <script src="../layout/scripts/jquery.mobilemenu.js"></script>
+    <!-- IE9 Placeholder Support -->
+    <script src="../layout/scripts/jquery.placeholder.min.js"></script>
+
+    <script type="text/javascript">
+
+      var a=document.getElementById("pwd");
+      var b=document.getElementById("pwd1");
+
+      function check()
+      {
+              if(a.value==b.value)
+              {
+                      alert("Thank You For Registering");
+              }
+              else
+              {
+                      alert("Both the passwords don't match");
+                      clear();
+              }
+      }
+      function clear()
+      {
+              a.value=b.value=null;
+
+      }
+
+
+
+      </script>
+
+
+
+    <!-- / IE9 Placeholder Support -->
+    
+  </div>
+</body>
+
+</html>
